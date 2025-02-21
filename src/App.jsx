@@ -27,7 +27,7 @@ function App() {
       setError(""); // Clear errors if JSON is valid
 
       // Call backend API (Replace with your actual backend URL)
-      const response = await axios.post("http://localhost:5000/api/process", parsedData);
+      const response = await axios.post("https://bfhl-mjid.onrender.com/bfhl", parsedData);
       setData(response.data);
     } catch (err) {
       setError(err+"Invalid JSON! Please enter a valid format.");
